@@ -1,0 +1,219 @@
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>Product example · Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/product/">
+<!-- Bootstrap core CSS -->
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .genoveffa {
+      	background-color: #ff9933;
+      	color: #ffffff;
+      }
+      .genoveffa:hover {
+      	background-color: rgba(0, 0, 0, 0);
+      	color: #ff9933;
+      	border-color: #ff9933;
+      }
+      .pina {
+      	background-color: rgba(0, 0, 0, 0);
+      	color: #ff9933;
+      	border-color: #ff9933;
+      }
+      .pina:hover {
+      	background-color: #ff9933;
+      	color: #ffffff;
+      }
+
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/custom.css' %}" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="site-header sticky-top py-1">
+  <div class="container d-flex flex-column flex-md-row justify-content-between">
+    <a class="py-2" href="#" aria-label="Product">
+      <img src="{% static 'img/h_simple.svg' %}" class="d-block mx-auto" style="width:32px; height:32px;">
+    </a>
+    <a class="py-2 d-none d-md-inline-block" href="#hex">hex.me</a>
+    <a class="py-2 d-none d-md-inline-block" href="#grimorio">Grimorio</a>
+    <a class="py-2 d-none d-md-inline-block" href="#team">Team</a>
+    <a class="py-2 d-none d-md-inline-block nav-link js-scroll-trigger" href="#lavoro">Lavora con hex.me</a>
+<!-- 
+    <button class="ml-5 mr-n5 btn pina" type="submit">Accedi</button>
+	<button class="btn genoveffa" type="submit">Registrati</button> -->
+  </div>
+</nav>
+
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light"
+     style="background-image: url({% static 'img/bg1.png' %});">
+  <div class="col-md-5 p-lg-5 mx-auto my-5">
+    <h1 class="display-4 font-weight-normal">Inizia a fatturare.</h1>
+    <p class="lead font-weight-normal">La prima piattaforma online per il malocchio <br><strong> è qui.</strong></p>
+    <!-- <a class="btn btn-outline-secondary" href="#">Coming soon</a> -->
+    <a target="blank" href="https://www.apple.com/it/ios/app-store/"> <img src="{% static 'img/Download_on_the_App_Store_Badge_IT_RGB_blk_100317.svg' %}"></a>
+    <a target="blank" href="https://play.google.com/store"> <img src=" {% static 'img/google-play-badge.png' %}" width="120px" height="40px"></a>
+  </div>
+  <div class="product-device shadow-sm d-none d-md-block"
+       style=".product-device::before {
+                  position: absolute;
+                  top: 10%;
+                  right: 10px;
+                  bottom: 10%;
+                  left: 10px;
+                  content: url({% static 'img/h_simple.svg' %});
+                  background-color: rgba(102, 51, 102, .8);
+                  border-radius: 5px;
+                  display:flex;
+                  flex-direction:row;
+                  align-items: center;
+                  justify-content:center;
+                }"></div>
+  <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+</div>
+
+
+ <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing pt-3">
+
+    <!-- START THE FEATURETTES -->
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Magnagna e guadagna<span class="text-muted"><br>Ti ammalieremo.</span></h2>
+        <p class="lead">Farla pagare a un ex, dare una lezione a quel collega, o anche solo fare un piccolo dispetto. hex.me ti permette di più che richiedere una maledizione: è uno strumento che connette migliaia di persone comuni e maghi. Tutti accomunati dall'umano desiderio di voler far soffrire alcune persone.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="{% static 'img/3a0a534fe9651cf71efae062621ba047.jpg' %}" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Il grimorio<span class="text-muted"><br>Scopri il nostro catalogo.</span></h2>
+        <p class="lead">Scegli tra gli oltre 6000 maghi e streghe che hanno già scelto hex.me per ampliare la propria clientela. Naviga tra le diverse tradizioni stregonesche e scegli l'hexer più adatto alle tue esigenze.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="{% static 'img/grimori1.jpg' %}" class="img-fluid mx-auto" height="500" width="500"><title>Placeholder</title></img>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+     <!-- Three columns of text below the carousel -->
+    <div class="row justify-content-center mb-3">
+    	<h1> Il nostro Team </h1>
+    </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="{% static 'img/giulia.jpg' %}" class="bd-placeholder-img rounded-circle" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%"/></img>
+        <h2>Giulia</h2>
+        <p>CEO & Fondatrice</p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="{% static 'img/megamede.jpg' %}"class="bd-placeholder-img rounded-circle" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%"/></img>
+        <h2>Amedeo</h2>
+        <p>Chief Vision Officer e Co-Fondatore</p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="{% static 'img/random.jpg' %}"class="bd-placeholder-img rounded-circle" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%"/></img>
+        <h2>Gianmattia</h2>
+        <p>Chief Technology Officer</p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+        <hr class="featurette-divider">
+
+ 
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-6 shadow-sm">
+            <img src="{% static 'img/halloween-alchemist-working-night-mortar-pestle-33433659.jpg' %}" width="100%" height="225">
+            <div class="card-body">
+              <p class="card-text">Sei una fattucchiera o un mago e sei stanco di gestire da solo i tuoi clienti? Diventa un hexer e inizia a guadagnare quando vuoi con il tuo talento!</p>
+              <div class="d-flex justify-content-between align-items-center">
+                  <button type="button" class="btn genoveffa">Registrati!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card mb-6 shadow-sm">
+            <img src="{% static 'img/gandalf.png' %}" width="100%" height="225">
+            <div class="card-body">
+              <p class="card-text">Non tutti i maghi usano incantesimi. Pensi di avere la stoffa del <em>warlock developer</em>? Potresti essere quello che stiamo cercando! Scopri le nostre posizioni tecniche.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                  <button type="button" class="btn genoveffa">Scopri</button>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div><!-- /.container -->
+
+<footer class="container py-5">
+  <div class="row">
+    <div class="col-12 col-md">
+      <img class="my-2" src="{% static 'img/h_hexagon.svg' %}" width="32px" height="32px">
+      <small class="d-block mb-3 text-muted">&copy; 2017-2020</small>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Azienda</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Cos'è hex.me</a></li>
+        <li><a class="text-muted" href="#">Grimorio</a></li>
+        <li><a class="text-muted" href="#">Team</a></li>
+        <li><a class="text-muted" href="#">Opportunità di lavoro</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Note legali</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Termini e condizioni</a></li>
+        <li><a class="text-muted" href="#">Informativa sulla privacy</a></li>
+        <li><a class="text-muted" href="#">Cookies</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Aiuto</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Contatti</a></li>
+        <li><a class="text-muted" href="#">FAQ</a></li>
+        <li><a class="text-muted" href="#">Tipi di malìa</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write("<script src=\"{% static 'js/jquery.slim.min.js' %}\"><\/script>")</script><script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+
+</html>
